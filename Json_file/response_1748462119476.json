@@ -1,0 +1,23 @@
+{
+  "processed": [
+    {
+      "bill_id": "19b58b8e-dfed-4144-aca6-9ebd424bfa69",
+      "filename": "IMG_20250528_212512.jpg",
+      "data": {
+        "purchase_date": "06/05/2025",
+        "total_amount": "86.19",
+        "items": [
+          {
+            "name": "WAITING FARE: 2.50",
+            "price": null
+          },
+          {
+            "name": "TOTAL: 86.19",
+            "price": null
+          }
+        ],
+        "category": "Travel"
+      }
+    }
+  ]
+}

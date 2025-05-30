@@ -1,0 +1,27 @@
+{
+  "processed": [
+    {
+      "bill_id": "8a98fbfe-5794-474f-a69c-bf8ab5777f52",
+      "filename": "d1c0dd45-cc88-400b-bf86-43be48867335.pdf",
+      "data": {
+        "purchase_date": null,
+        "total_amount": null,
+        "items": [
+          {
+            "name": "Amount : AED 80.00",
+            "price": null
+          },
+          {
+            "name": "ce i 14.26",
+            "price": null
+          },
+          {
+            "name": "aoungot | 200 53.11",
+            "price": null
+          }
+        ],
+        "category": "Others"
+      }
+    }
+  ]
+}
