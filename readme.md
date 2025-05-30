@@ -72,20 +72,16 @@ Edit
     "category": "Grocery"
   }
 }
+
 ##  How It Works
 User uploads bills via /upload-bills/
-
 Files are saved temporarily
-
 If it's a PDF:
-
 Each page is converted to an image using PyMuPDF
-
 Image(s) are passed to Tesseract via pytesseract
-
 Text is extracted and parsed using regex
-
 Output is structured into JSON and returned
+
 ##  Notes
 OCR accuracy depends on image clarity and format.
 Currently uses simple keyword-based category inference.
