@@ -35,18 +35,18 @@ Clone the repository
 
 ```bash
  git https://github.com/Monikabarfa2/OCR_BILL
----
 
-3)Install dependencies
+
+ ## Install dependencies
 pip install -r requirements.txt
----
 
-4)Run the FastAPI server
+
+## Run the FastAPI server
 uvicorn main:app --reload
 Open Swagger UI at:
 http://127.0.0.1:8000/docs
----
-5) API Endpoints
+
+## API Endpoints
 POST /upload-bills/
 Upload one or more .jpg, .png, or .pdf files
 
@@ -54,8 +54,8 @@ Returns parsed data in JSON format
 
 GET /get-bill/{bill_id}
 Fetches the parsed result using a unique bill ID
----
-6)📄 Sample Output
+
+##  Sample Output
 json
 Copy
 Edit
@@ -72,12 +72,23 @@ Edit
     "category": "Grocery"
   }
 }
----
-7) Notes
+##  How It Works
+User uploads bills via /upload-bills/
+
+Files are saved temporarily
+
+If it's a PDF:
+
+Each page is converted to an image using PyMuPDF
+
+Image(s) are passed to Tesseract via pytesseract
+
+Text is extracted and parsed using regex
+
+Output is structured into JSON and returned
+##  Notes
 OCR accuracy depends on image clarity and format.
-
 Currently uses simple keyword-based category inference.
-
 Files are processed temporarily and deleted after extraction.
 
 
