@@ -34,17 +34,18 @@ Pillow (PIL)
 Clone the repository
 
 ```bash
-git clone https://github.com/your-username/ocr-bill-processing-api.git
-cd ocr-bill-processing-api
+ git https://github.com/Monikabarfa2/OCR_BILL
+---
 
 3)Install dependencies
 pip install -r requirements.txt
+---
 
 4)Run the FastAPI server
 uvicorn main:app --reload
 Open Swagger UI at:
 http://127.0.0.1:8000/docs
-
+---
 5) API Endpoints
 POST /upload-bills/
 Upload one or more .jpg, .png, or .pdf files
@@ -53,7 +54,7 @@ Returns parsed data in JSON format
 
 GET /get-bill/{bill_id}
 Fetches the parsed result using a unique bill ID
-
+---
 6)📄 Sample Output
 json
 Copy
@@ -71,6 +72,7 @@ Edit
     "category": "Grocery"
   }
 }
+---
 7) Notes
 OCR accuracy depends on image clarity and format.
 
